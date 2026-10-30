@@ -28,7 +28,7 @@ jobs:
 
       - name: Build APK
         working-directory: GameDropAlert-Source-v1.1/GameDropAlert
-        run: gradle --no-daemon assembleDebug
+        run: gradle --no-daemon assembleDebug --stacktrace --info --console=plain
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
